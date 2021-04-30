@@ -14,9 +14,9 @@ import {Helmet} from "react-helmet";
 function App() {
   return (<>
           <Helmet>
-              <title>Tres Tabularii</title>
-              <link rel="icon" type="image/png" href="./static/img/sygnet.png"/>
-              <link rel="icon" type="image/png" href="./static/img/sygnet.png"/>
+              <title>Tabularii</title>
+              <link rel="icon" type="image/png" href="./static/img/tabularii-logo.png"/>
+              <link rel="icon" type="image/png" href="./static/img/tabularii-logo.png"/>
           </Helmet>
       <div className="container">
         <LandingPage />
