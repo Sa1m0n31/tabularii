@@ -253,6 +253,15 @@ html {
 	font-size: 1rem;
 }
 
+.landingBottomHeader span {
+	display: block;
+	text-align: center;
+}
+
+.landingBottomHeader .smaller {
+	font-size: .8rem;
+}
+
 .bold {
 	display: block;
 	font-weight: 700;

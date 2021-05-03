@@ -39,7 +39,7 @@ app.post("/send", async (req, res) => {
     /* Nodemailer */
     let transporter = nodemailer.createTransport(smtpTransport ({
         auth: {
-            user: 'klient@trestabularii.pl',   //email of sender
+            user: 'klient@tabularii-ksiegowosc.pl',   //email of sender
             pass: 'klienttrestabularii123'    //password of sender
         },
         host: 'skylo-pl.atthost24.pl',    //my email host
@@ -61,7 +61,7 @@ app.post("/send", async (req, res) => {
         .replace("msg", "Wiadomość");
 
     let mailOptions = {
-        from: 'klient@trestabularii.pl',
+        from: 'klient@tabularii-ksiegowosc.pl',
         to: 'kontakt@tabularii-ksiegowosc.pl',
         subject: 'Wiadomość z formularza kontaktowego',
         text: msg

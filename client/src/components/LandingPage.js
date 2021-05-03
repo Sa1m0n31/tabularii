@@ -25,7 +25,7 @@ const LandingPage = () => {
 
       <div className="landingCenter">
         <h1 className="landingHeader">
-          Kompleksowa księgowość dla małych i dużych firm
+          Pełna księgowość dla małych i dużych firm
         </h1>
 
         <button className="landingBtn" onClick={() => goToOferta()}>
@@ -39,6 +39,8 @@ const LandingPage = () => {
     <div className="landingBottomBox">
       <h2 className="landingBottomHeader">
         <span className="bold">Tabularii</span>
+        <span className="smaller">Biuro Rachunkowe</span>
+        <span className="smaller">Anna Szymańska</span>
       </h2>
 
       <div className="landingBottomItem">

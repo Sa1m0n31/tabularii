@@ -5,18 +5,28 @@ import onasimg from '../static/img/ksiegowosc.png'
 const Onas = () => {
   return (<section className="section oNas" id="onas">
     <h2 className="sectionHeader">
-      O nas
+      O mnie
     </h2>
     <div className="oNasInner">
       <div className="oNasLeft">
         <h3 className="oNasHeader">
-          Księgowość to nasza pasja
+          Księgowość to moja pasja
         </h3>
         <p className="oNasText">
-          Jesteśmy zgranym zespołem, dla których księgowość to nie tylko nudne cyfry i papiery. Ta branża to przede wszystkim nasza pasja.
+          Dla mnie księgowość to nie tylko nudne cyfry i papiery, dla mnie księgowość to przede wszystkim pasja.
         </p>
         <p className="oNasText">
-          Posiadamy duże doświadczenie, które chcemy wykorzystać, aby wspomóc współpracujące z nami firmy. Stale podnosimy swoje kwalifikacje, aby maksymalnie dostosować się do wymagań rynku. Swoim klientom oferujemy całkowicie indywidualne podejście. Nasza oferta to przede wszystkim kompleksowa obsługa z zakresu księgowości oraz kadr i płac. Wychodząc na przeciw oczekiwaniom wszystkich klientów, oferujemy prowadzenie księgowości online.
+          Posiadam wieloletnie doświadczenie zawodowe poparte certyfikatami i dyplomami. Dzięki członkowstwu w SKwP wciąż
+          aktualizuję swoją wiedzę poprzez szkolenia w najbardziej znanym i rozpoznawanym stowarzyszeniu księgowych w
+          Polsce.
+        </p>
+        <p className="oNasText">
+          Ideą mojej firmy jest: wspomóc przedsiębiorców w działalności którą prowadzą. Jestem tu aby wesprzeć od strony
+          teoretycznej i praktycznej Twój biznes.
+        </p>
+        <p className="oNasText">
+          Biuro rachunkowe, które prowadzę posiada ubezpieczenie OC PZU oraz licencjonowane oprogramowanie księgowe ERP
+          Enova 365 uwzględniające najnowsze przepisy podatkowe.
         </p>
       </div>
 
