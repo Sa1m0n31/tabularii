@@ -58,6 +58,7 @@ html {
 .menu {
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 	position: absolute;
 	top: 40px;
 	left: 50%;
@@ -74,6 +75,7 @@ html {
 
 .topMenu {
 	display: flex;
+	align-items: center;
 	list-style-type: none;
 }
 
@@ -309,6 +311,7 @@ html {
 .ofertaInner {
 	width: 100%;
 	display: flex;
+	align-items: flex-start;
 	justify-content: space-between;
 	margin-top: 180px;
 }
@@ -360,6 +363,7 @@ html {
 	background: #111111;
 	color: #fff;
 	display: flex;
+	align-items: flex-start;
 	justify-content: space-between;
 	margin-top: 120px;
 	position: absolute;
@@ -450,6 +454,7 @@ html {
 	left: 50%;
 	transform: translateX(-50%);
 	display: flex;
+	align-items: center;
 	z-index: 5;
 }
 
@@ -508,6 +513,7 @@ html {
 .referencjeSlider {
 	width: 100%;
 	display: flex;
+	align-items: flex-start;
 	justify-content: space-between;
 }
 
@@ -520,6 +526,7 @@ html {
 
 .referencjeSlider .referencjeActive {
 	display: flex;
+	align-items: center;
 }
 
 .referencjeItem {
@@ -611,6 +618,7 @@ label {
 	border: 1px solid #B38D43;
 	padding: 12px 20px;
 	display: flex;
+	align-items: center;
 	width: 60%;
 	margin: 20px 0;
 }

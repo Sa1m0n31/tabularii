@@ -62,7 +62,7 @@ app.post("/send", async (req, res) => {
 
     let mailOptions = {
         from: 'klient@trestabularii.pl',
-        to: 'kontakt@trestabularii.pl',
+        to: 'kontakt@tabularii-ksiegowosc.pl',
         subject: 'Wiadomość z formularza kontaktowego',
         text: msg
     }
