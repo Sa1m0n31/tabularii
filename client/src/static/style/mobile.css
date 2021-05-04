@@ -17,6 +17,15 @@
 	.oferta {
 		padding-bottom: 40px;
 	}
+
+	.ofertaBtn {
+		width: 100%;
+	}
+
+	.ofertaItem {
+		padding: 20px 40px;
+	}
+
   /* O nas */
 	.oNasLeft {
 		margin-left: 5vw;
@@ -55,9 +64,13 @@
 		bottom: 15px;
 	}
   /* Nasza oferta */
-	.ofertaImg {
+	.ofertaImgWrapper {
 		width: 250px;
 		height: 175px;
+	}
+
+	.ofertaItem {
+		height: 400px;
 	}
 
 	.ofertaHeader {
@@ -137,6 +150,19 @@
 }
 
 @media (max-width: 1000px) {
+	.modalContent {
+		width: 90vw;
+	}
+
+	.modalContentHeader {
+		font-size: 20px;
+	}
+
+	.modalContentList {
+		font-size: 14px;
+		min-width: auto;
+	}
+
   /* Form */
 	.formInner {
 		width: 80%;
@@ -146,7 +172,7 @@
 		margin-top: 300px;
 	}
 
-	.ofertaImg {
+	.ofertaImgWrapper {
 		width: 200px;
 		height: auto;
 		transform: translateY(-50%);
@@ -207,6 +233,10 @@
 		width: 100px;
 		height: auto;
 		transform: none;
+	}
+
+	.mobileMenu {
+
 	}
 
 	.hamburgerMenu {
@@ -316,9 +346,31 @@
 	.thanksContainer .thanksSubheader {
 		font-size: 16px;
 	}
+
+	.modalContent {
+		padding: 50px 30px 30px;
+	}
+
+	.modalExit {
+		top: 10px;
+		right: 10px;
+		width: 30px;
+		height: 30px;
+		font-size: 16px;
+	}
 }
 
 @media (max-width: 600px) {
+	.ofertaBtn {
+		margin-left: 50% !important;
+		height: 50px;
+		margin-top: -10px;
+	}
+
+	.ofertaItem {
+		height: auto;
+	}
+
   /* Form */
 	.formInner {
 		width: 90%;
@@ -382,14 +434,19 @@
 		display: none;
 	}
 
+	.menu {
+		height: 70px;
+	}
+
 	.hamburgerMenu {
 		display: flex !important;
 		flex-direction: column;
 		justify-content: space-between;
 		background: transparent;
-		width: 40px;
-		height: 40px;
+		width: 30px;
+		height: 30px;
 		margin-right: 20px;
+		margin-top: 0 !important;
 	}
 
 	.hamburgerLine {
@@ -399,7 +456,7 @@
 	}
 
 	.menuLogo {
-		width: 100px;
+		width: 50px;
 		height: auto;
 	}
 
