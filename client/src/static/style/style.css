@@ -701,9 +701,8 @@ html {
 
 .formInner {
 	padding: 50px;
-	margin-top: 60px;
-	background: rgba(17, 17, 17, 0.85);
-	width: 50%;
+	margin-top: 0;
+	width: 55%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -771,6 +770,22 @@ input::placeholder, textarea::placeholder {
 	font-size: .4rem;
 }
 
+.contactContainer {
+	margin-top: 40px;
+	display: flex;
+	align-items: center;
+	background: rgba(17, 17, 17, 0.5);
+}
+
+.formContactData {
+	border-left: 1px solid #b38d43;
+	padding-left: 25px;
+}
+
+.formContactData * {
+	color: #fff;
+}
+
 /* Fix Chrome issue with autofill form */
 /* Change the white to any color ;) */
 input:-webkit-autofill,
@@ -786,7 +801,7 @@ input:-webkit-autofill {
 
 /* Footer */
 .footer {
-	padding: 40px 0;
+	padding: 40px 0 20px;
 	width: 100%;
 	background: #131313;
 	display: flex;
@@ -802,18 +817,26 @@ input:-webkit-autofill {
 }
 
 .footerHeader1 {
-	font-size: .45rem;
+	font-size: .6rem;
 	font-weight: 300;
 }
 
-.footerHeader2 {
+.extraMarginTop {
 	margin-top: 30px;
+}
+
+.footerHeader2 {
 	font-size: .4rem;
 	font-weight: 400;
+	margin-bottom: 5px;
 }
 
 .footerHeader2 a {
 	font-weight: 600;
 	color: #B38D43;
 	text-decoration: none;
+}
+
+.bold {
+	font-weight: 700 !important;
 }

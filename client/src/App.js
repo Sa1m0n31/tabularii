@@ -14,7 +14,7 @@ import {Helmet} from "react-helmet";
 function App() {
   return (<>
           <Helmet>
-              <title>Tabularii</title>
+              <title>Tabularii - Biuro Rachunkowe Anna Szymańska</title>
               <link rel="icon" type="image/png" href="./static/img/tabularii-logo.png"/>
               <link rel="icon" type="image/png" href="./static/img/tabularii-logo.png"/>
           </Helmet>

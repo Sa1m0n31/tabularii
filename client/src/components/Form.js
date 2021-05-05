@@ -87,52 +87,71 @@ const Form = () => {
       Wypełnij formularz i zostaw do siebie kontakt, a my oddzwonimy do Ciebie i umówimy się na konsultacje.
     </h3>
 
-    <form className="formInner" method="POST" action="#" onSubmit={formik.handleSubmit}>
-      <label>
-        <img className="formIcon" src={user} alt="imie-i-nazwisko" />
-        <input name="name" type="text" placeholder="Imię i nazwisko"
-               {...formik.getFieldProps("name")}
-        />
-      </label>
+    <div className="contactContainer">
+      <form className="formInner" method="POST" action="#" onSubmit={formik.handleSubmit}>
+        <label>
+          <img className="formIcon" src={user} alt="imie-i-nazwisko" />
+          <input name="name" type="text" placeholder="Imię i nazwisko"
+                 {...formik.getFieldProps("name")}
+          />
+        </label>
 
-      <label>
-        <img className="formIcon" src={phone} alt="numer-telefonu" />
-        <input name="phoneNumber" type="text" placeholder="Numer telefonu"
-               {...formik.getFieldProps("phoneNumber")}
-        />
-      </label>
+        <label>
+          <img className="formIcon" src={phone} alt="numer-telefonu" />
+          <input name="phoneNumber" type="text" placeholder="Numer telefonu"
+                 {...formik.getFieldProps("phoneNumber")}
+          />
+        </label>
 
-      <label>
-        <img className="formIcon" src={mail} alt="adres-email" />
-        <input name="email" type="text" placeholder="Adres email"
-               {...formik.getFieldProps("email")}
-        />
-      </label>
+        <label>
+          <img className="formIcon" src={mail} alt="adres-email" />
+          <input name="email" type="text" placeholder="Adres email"
+                 {...formik.getFieldProps("email")}
+          />
+        </label>
 
-      <label>
+        <label>
         <textarea name="msg" placeholder="Uwagi, pytania (opcjonalnie)"
                   {...formik.getFieldProps("msg")}
         />
-      </label>
+        </label>
 
-      <ReCaptcha
-          sitekey="6Lflx5kaAAAAADk7MQ5YS0F4RuTMmIBMKYhJBM0h"
-          verifyCallback={verifyCallback}
-      />
+        <ReCaptcha
+            sitekey="6Lflx5kaAAAAADk7MQ5YS0F4RuTMmIBMKYhJBM0h"
+            verifyCallback={verifyCallback}
+        />
 
-      {/*<label className="checkLabel">*/}
-      {/*  <button className="check" onClick={() => { setCheck(!check) }}>*/}
-      {/*    {check ? <img className="checkImg" src={require("../../static/img/check.svg")} alt="ok" /> : ""}*/}
-      {/*  </button>*/}
-      {/*  <span className="checkText">*/}
-      {/*    Zapoznałem się z Regulaminem i Polityką Prywatności i wyrażam zgodę na przetwarzanie moich danych osobowych.*/}
-      {/*  </span>*/}
-      {/*</label>*/}
+        {/*<label className="checkLabel">*/}
+        {/*  <button className="check" onClick={() => { setCheck(!check) }}>*/}
+        {/*    {check ? <img className="checkImg" src={require("../../static/img/check.svg")} alt="ok" /> : ""}*/}
+        {/*  </button>*/}
+        {/*  <span className="checkText">*/}
+        {/*    Zapoznałem się z Regulaminem i Polityką Prywatności i wyrażam zgodę na przetwarzanie moich danych osobowych.*/}
+        {/*  </span>*/}
+        {/*</label>*/}
 
-      <button type="submit" className="landingBtn formBtn">
-        Wyślij formularz
-      </button>
-    </form>
+        <button type="submit" className="landingBtn formBtn">
+          Wyślij formularz
+        </button>
+      </form>
+
+      <div className="formContactData">
+        <h4 className="footerHeader1 bold">Tabularii</h4>
+        <h4 className="footerHeader1">
+          Biuro Rachunkowe Anna Szymańska
+        </h4>
+        <h4 className="footerHeader1 extraMarginTop">
+          ul. Warszawska 4/5
+        </h4>
+        <h4 className="footerHeader1">
+          87-100 Toruń
+        </h4>
+        <h4 className="footerHeader1 extraMarginTop">
+          tel. +48 667 260 795
+        </h4>
+      </div>
+    </div>
+
 
     <div className="thanksContainer">
       <h2 className="thanksHeader">Twój formularz został pomyślnie wysłany</h2>
