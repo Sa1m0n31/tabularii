@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react"
 import oferta1 from '../static/img/ksiegowosc.jpg'
 import oferta2 from '../static/img/kadry-i-place.jpg'
 import oferta3 from '../static/img/pozostale.jpg'
+import arrowRight from '../static/img/arrow-right.svg'
 
 const Oferta = () => {
   const modal = useRef(null);
@@ -30,26 +31,52 @@ const Oferta = () => {
             &times;
           </button>
 
-
-
           <div className="modalContentText" id={modalNumber === 0 ? "" : "d-none"}>
             <h2 className="modalContentHeader">
-              Zakres usług, które świadczymy w ramach pełnej księgowości (Ksiąg rachunkowych):
+              Zakres usług, które świadczymy w ramach księgowości dla małych i dużych firm
             </h2>
             <ul className="modalContentList">
-              <li>1. Rejestracja/aktualizacja danych podmiotu.</li>
-              <li>2. Opracowanie zakładowego planu kont oraz polityki rachunkowości dla potrzeb przedsiębiorstwa.</li>
-              <li>3. Bieżąca ewidencja zdarzeń gospodarczych.</li>
-              <li>4. Sporządzanie deklaracji, rozliczeń w zakresie podatku dochodowego (CIT) i podatku od towarów i usług (VAT).</li>
-              <li>5. Przesyłanie JPK VAT do urzędu skarbowego.</li>
-              <li>6. Prowadzenie ewidencji środków trwałych i wyposażenia wraz z miesięcznym naliczaniem amortyzacji.</li>
-              <li>7. Sporządzanie bilansów, rachunków wyników.</li>
-              <li>8. Okresowe sporządzanie sprawozdań dla GUS i NBP.</li>
+              <li>1. Rejestracja/aktualizacja danych podmiotu</li>
+              <li>2. Opracowanie zakładowego planu kont oraz polityki rachunkowości dla potrzeb przedsiębiorstwa</li>
+              <li>3. Bieżąca ewidencja zdarzeń gospodarczych</li>
+              <li>4. Sporządzanie deklaracji, rozliczeń w zakresie podatku dochodowego (CIT) i podatku od towarów i usług (VAT)</li>
+              <li>5. Przesyłanie JPK VAT do urzędu skarbowego</li>
+              <li>6. Prowadzenie ewidencji środków trwałych i wyposażenia wraz z miesięcznym naliczaniem amortyzacji</li>
+              <li>7. Sporządzanie bilansów, rachunków wyników</li>
+              <li>8. Okresowe sporządzanie sprawozdań dla GUS i NBP</li>
               <li>9. Przygotowywanie niezbędnych zestawień pomocnych w zarządzaniu jednostką dla Zarządu, Rady nadzorczej
                 itp.</li>
-              <li>10. Reprezentacja przed organami skarbowymi (na życzenie klienta).</li>
+              <li>10. Reprezentacja przed organami skarbowymi (na życzenie klienta)</li>
             </ul>
           </div>
+
+        <div className="modalContentText" id={modalNumber === 2 ? "" : "d-none"}>
+          <h2 className="modalContentHeader">
+            Zakres usług, które świadczymy w ramach Książki Przychodów i Rozchodów (KPiR)
+          </h2>
+          <ul className="modalContentList">
+            <li>1. Rejestracja działalności gospodarczej /aktualizacja danych podmiotu</li>
+            <li>2. Bieżąca ewidencja zdarzeń gospodarczych</li>
+            <li>3. Ewidencja zakupów, sprzedaży VAT</li>
+            <li>4. Sporządzanie deklaracji, rozliczeń w zakresie podatku dochodowego i podatku od towarów i usług (VAT)</li>
+            <li>5. Prowadzenie ewidencji środków trwałych i wyposażenia</li>
+            <li>6. Reprezentacja przed organami skarbowymi (na życzenie klienta)</li>
+          </ul>
+        </div>
+
+        <div className="modalContentText" id={modalNumber === 3 ? "" : "d-none"}>
+          <h2 className="modalContentHeader">
+            Zakres usług, które świadczymy w ramach Ryczałtu (Ewidencji przychodów)
+          </h2>
+          <ul className="modalContentList">
+            <li>1. Prowadzenie ewidencji przychodów</li>
+            <li>2. Ewidencja środków trwałych i wyposażenia</li>
+            <li>3. Sporządzanie i elektroniczne przesyłanie deklaracji podatkowych</li>
+            <li>4. Reprezentacja przed organami skarbowymi (na życzenie klienta)</li>
+            <li>5. Uczestniczenie w kontrolach skarbowych</li>
+            <li>6. Sporządzenie deklaracji rocznej PIT-28</li>
+          </ul>
+        </div>
 
         <div className="modalContentText" id={modalNumber === 1 ? "" : "d-none"}>
           <h2 className="modalContentHeader">
@@ -78,18 +105,27 @@ const Oferta = () => {
           <img className="ofertaImg" src={oferta1} alt="tabularii-biuro-rachunkowe" />
         </div>
         <h3 className="ofertaHeader">
-          Pełna księgowość (księgi rachunkowe)
+          Księgowość
         </h3>
-        <p className="ofertaText">
-          Świadczymy kompleksowe usługi z zakresu pełnej księgowości, dzięki którym przedsiębiorca ma pełen obraz sytuacji
-          finansowej swojej firmy.
-        </p>
 
-        <button className="landingBtn ofertaBtn" onClick={() => { showPopup(0)}}>
-          <span className="landingBtnText">
-            Dowiedz się więcej
-          </span>
-        </button>
+        <div className="ofertaLinks">
+          <button className="ofertaLink" onClick={() => { showPopup(0)}}>
+            Księgowość dla małych i dużych firm
+            <img className="arrowRight" src={arrowRight} alt="wiecej" />
+          </button>
+          <button className="ofertaLink" onClick={() => { showPopup(2)}}>
+            Książka Przychodów i Rozchodów (KPiR)
+            <img className="arrowRight" src={arrowRight} alt="wiecej" />
+          </button>
+          <button className="ofertaLink" onClick={() => { showPopup(3)}}>
+            Ryczałt (Ewidencja przychodów)
+            <img className="arrowRight" src={arrowRight} alt="wiecej" />
+          </button>
+        </div>
+
+        <p className="ofertaText">
+          Przedsiębiorcy, którzy nie muszą prowadzić pełnej księgowości zobligowani są do prowadzenia tzw. małej księgowości inaczej zwanej księgowością uproszczoną. Nasze biuro świadczy kompleksowe usługi z zakresu małej księgowości.
+        </p>
 
       </div>
 
@@ -101,7 +137,7 @@ const Oferta = () => {
           Kadry i płace
         </h3>
         <p className="ofertaText">
-          Oferujemy pełen zakres usług kadrowo-płacowych.
+          Oferujemy <b>pełen zakres usług kadrowo-płacowych</b>.
         </p>
 
         <button className="landingBtn ofertaBtn" onClick={() => { showPopup(1)}}>
@@ -119,16 +155,11 @@ const Oferta = () => {
           Pozostałe usługi
         </h3>
         <p className="ofertaText">
-          Doradztwo i pomoc w zakładaniu działalności gospodarczej.
-          Obsługa z zakresu BHP i Ppoż.  Kompleksowa obsługa w zakresie ochrony danych osobowych RODO.
-          Rozliczenia roczne PIT dla osób fizycznych.
+          <b>1.</b> Doradztwo i pomoc w zakładaniu działalności gospodarczej.<br/>
+          <b>2.</b> Obsługa z zakresu BHP i Ppoż.<br/>
+          <b>3.</b> Kompleksowa obsługa w zakresie ochrony danych osobowych RODO.<br/>
+          <b>4.</b> Rozliczenia roczne PIT dla osób fizycznych.
         </p>
-
-        <button className="landingBtn ofertaBtn">
-          <span className="landingBtnText">
-            Dowiedz się więcej
-          </span>
-        </button>
       </div>
     </div>
   </section>

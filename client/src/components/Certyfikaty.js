@@ -1,17 +1,14 @@
 import React, { useRef, useState, useEffect } from "react"
 import ReactSiema from 'react-siema'
 
-import cert1 from '../static/img/1.jpeg';
-import cert2 from '../static/img/2.jpeg';
-import cert3 from '../static/img/3.jpeg';
-import cert4 from '../static/img/4.jpeg';
-import cert5 from '../static/img/5.jpeg';
-import cert6 from '../static/img/6.jpeg';
-import cert7 from '../static/img/7.jpeg';
-import cert8 from '../static/img/8.jpeg';
-import cert9 from '../static/img/9.jpeg';
-import cert10 from '../static/img/10.jpg';
-import cert11 from '../static/img/11.jpg';
+import cert1 from '../static/img/1.png';
+import cert2 from '../static/img/2.png';
+import cert3 from '../static/img/3.png';
+import cert4 from '../static/img/4.png';
+import cert5 from '../static/img/5.png';
+import cert6 from '../static/img/6.png';
+import cert7 from '../static/img/7.png';
+import cert9 from '../static/img/9.png';
 
 import leftImg from '../static/img/chevron_duo_left.svg'
 import rightImg from '../static/img/chevron_duo_right.svg'

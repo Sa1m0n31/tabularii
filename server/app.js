@@ -7,13 +7,13 @@ const smtpTransport = require('nodemailer-smtp-transport');
 const app = express();
 
 /* Enable cors */
-app.use(cors());
+app.use(cors({credentials: true, origin: true}));
 
 /* Enable body in http request */
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// /* Redirect http to https */
+//* Redirect http to https */
 app.enable('trust proxy');
 app.use (function (req, res, next) {
     if (req.secure) {
@@ -25,13 +25,6 @@ app.use (function (req, res, next) {
     }
 });
 
-
-/* Serve static React page */
-app.use(express.static(path.join(__dirname, '../client/build')));
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/build/index.html'));
-});
-
 /* Send form */
 app.post("/send", async (req, res) => {
     const form = req.body.form;
@@ -39,8 +32,8 @@ app.post("/send", async (req, res) => {
     /* Nodemailer */
     let transporter = nodemailer.createTransport(smtpTransport ({
         auth: {
-            user: 'klient@tabularii-ksiegowosc.pl',   //email of sender
-            pass: 'klienttrestabularii123'    //password of sender
+            user: 'form@tabularii-ksiegowosc.pl',   //email of sender
+            pass: 'tabulariiksiegowosc123'    //password of sender
         },
         host: 'skylo-pl.atthost24.pl',    //my email host
         secureConnection: true,
@@ -61,7 +54,7 @@ app.post("/send", async (req, res) => {
         .replace("msg", "Wiadomość");
 
     let mailOptions = {
-        from: 'klient@tabularii-ksiegowosc.pl',
+        from: 'form@tabularii-ksiegowosc.pl',
         to: 'kontakt@tabularii-ksiegowosc.pl',
         subject: 'Wiadomość z formularza kontaktowego',
         text: msg
@@ -74,6 +67,13 @@ app.post("/send", async (req, res) => {
             console.log("success");
         }
     });
+});
+
+
+/* Serve static React page */
+app.use(express.static(path.join(__dirname, '../client/build')));
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
 /* Run the app */

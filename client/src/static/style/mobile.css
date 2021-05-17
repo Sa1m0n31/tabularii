@@ -205,6 +205,10 @@
 		transform: translateY(-50px);
 	}
 
+	.ofertaLinks {
+		transform: translateY(-40px);
+	}
+
 	.ofertaItem {
 		padding: 0 20px;
 	}
@@ -368,14 +372,26 @@
 
 	.modalContent {
 		padding: 50px 30px 30px;
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		transform: translate(-50%, 0);
 	}
 
 	.modalExit {
-		top: 10px;
-		right: 10px;
+		top: 20px;
+		right: 20px;
 		width: 30px;
 		height: 30px;
 		font-size: 16px;
+	}
+
+	.modalContentHeader {
+		font-size: 18px;
+	}
+
+	.modalContentList {
+		font-size: 13px;
 	}
 
 	.contactContainer {
@@ -488,8 +504,9 @@
 	}
 
 	.menuLogo {
-		width: 50px;
+		width: 65px;
 		height: auto;
+		margin-top: -10px;
 	}
 
 	.landingBtn {

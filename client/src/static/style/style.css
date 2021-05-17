@@ -320,6 +320,7 @@ html {
 .ofertaInner {
 	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: flex-start;
 	justify-content: space-between;
 	margin-top: 180px;
@@ -365,7 +366,7 @@ html {
 	font-weight: 300;
 	font-size: .5rem;
 	text-align: center;
-	transform: translateY(-40px);
+	transform: translateY(-20px);
 }
 
 .ofertaBtn {
@@ -375,6 +376,39 @@ html {
 	margin: 20px auto 0 50%;
 	display: block;
 	white-space: nowrap;
+}
+
+.ofertaLinks {
+	transform: translateY(-20px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.ofertaLink {
+	background: transparent;
+	margin-bottom: 8px;
+	color: #fff;
+	text-decoration: underline;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.arrowRight {
+	height: auto;
+	margin-left: 0;
+	opacity: 0;
+	width: 0;
+	transition: .2s all;
+}
+
+.ofertaLink:hover .arrowRight {
+	width: 15px;
+	opacity: 1;
+	margin-left: 10px;
 }
 
 /* Oferta modal */
@@ -389,7 +423,7 @@ html {
 	width: 100vw;
 	height: 100vh;
 	background: rgba(0, 0, 0, .5);
-	z-index: 5;
+	z-index: 100;
 	transition: .4s all;
 	opacity: 0;
 	display: none;
@@ -441,6 +475,13 @@ html {
 	list-style-type: none;
 	text-align: center;
 	min-width: 600px;
+}
+
+.oferta .sectionHeader {
+	margin-left: 50%;
+	margin-right: 50%;
+	margin-bottom: 150px;
+	transform: translateX(-50%);
 }
 
 /* O nas */

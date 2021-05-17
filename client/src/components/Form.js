@@ -59,7 +59,7 @@ const Form = () => {
     }),
     onSubmit: values => {
       // if(recaptcha) {
-        axios.post("https://trestabularii.pl/send", {
+        axios.post("https://tabularii-ksiegowosc.pl/send", {
           form: values
         })
             .then(res => {
@@ -120,15 +120,6 @@ const Form = () => {
             sitekey="6Lflx5kaAAAAADk7MQ5YS0F4RuTMmIBMKYhJBM0h"
             verifyCallback={verifyCallback}
         />
-
-        {/*<label className="checkLabel">*/}
-        {/*  <button className="check" onClick={() => { setCheck(!check) }}>*/}
-        {/*    {check ? <img className="checkImg" src={require("../../static/img/check.svg")} alt="ok" /> : ""}*/}
-        {/*  </button>*/}
-        {/*  <span className="checkText">*/}
-        {/*    Zapoznałem się z Regulaminem i Polityką Prywatności i wyrażam zgodę na przetwarzanie moich danych osobowych.*/}
-        {/*  </span>*/}
-        {/*</label>*/}
 
         <button type="submit" className="landingBtn formBtn">
           Wyślij formularz
