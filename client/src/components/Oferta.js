@@ -124,7 +124,7 @@ const Oferta = () => {
         </div>
 
         <p className="ofertaText">
-          Przedsiębiorcy, którzy nie muszą prowadzić pełnej księgowości zobligowani są do prowadzenia tzw. małej księgowości inaczej zwanej księgowością uproszczoną. Nasze biuro świadczy kompleksowe usługi z zakresu małej księgowości.
+          Przedsiębiorcy, którzy nie muszą prowadzić pełnej księgowości zobligowani są do prowadzenia tzw. małej księgowości inaczej zwanej księgowością uproszczoną. Nasze biuro świadczy kompleksowe usługi z zakresu pełnej i małej księgowości.
         </p>
 
       </div>
